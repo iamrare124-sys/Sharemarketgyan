@@ -1,0 +1,13 @@
+{
+  "name": "ShareMarketGyan — India Stock Market Intelligence",
+  "short_name": "ShareMarketGyan",
+  "description": "Live Nifty, Sensex updates and expert stock market analysis for Indian investors",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
