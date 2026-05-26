@@ -31,6 +31,7 @@ async function publishOne(stories, liveData, liveDataText, usedLinks, skipDup) {
       const schema = generateSchema({ post: { ...generated, coverImage: image.url }, nicheConfig, url })
 
       const saved = await savePost({
+        site_name: process.env.SITE_NAME || 'forexguru',
         slug, title: generated.title,
         excerpt: generated.metaDescription?.length > 20 ? generated.metaDescription : (generated.content?.hook?.slice(0, 200) || generated.title),
         content: { ...generated.content, rawContent: generated.rawContent || '' },
